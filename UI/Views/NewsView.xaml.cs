@@ -1,11 +1,12 @@
 using System.Windows.Controls;
 
-namespace UI.Views;
-
-public partial class NewsView : UserControl
+namespace CryptoTracker.UI.Views
 {
-    public NewsView()
+    public partial class NewsView : UserControl
     {
-        InitializeComponent();
+        public NewsView()
+        {
+            InitializeComponent();
+        }
     }
 }

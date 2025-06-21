@@ -1,12 +1,17 @@
-<UserControl x:Class="UI.MainWindow"
-             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-             xmlns:local="clr-namespace:UI"
-             mc:Ignorable="d"
-             d:DesignHeight="300" d:DesignWidth="300">
+﻿<Window x:Class="CryptoTracker.UI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="CryptoPulse" Height="450" Width="800">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <ContentControl Content="{Binding CurrentView}" />
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Grid.Row="1" Margin="0,20,0,0">
+            <Button Content="Портфель" Command="{Binding SwitchToPortfolioCommand}" Margin="5"/>
+            <Button Content="Новости" Command="{Binding SwitchToNewsCommand}" Margin="5"/>
+            <Button Content="Курсы валют" Command="{Binding SwitchToRatesCommand}" Margin="5"/>
+        </StackPanel>
     </Grid>
-</UserControl>
+</Window>

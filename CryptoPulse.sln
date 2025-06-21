@@ -2,8 +2,6 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CryptoPulse", "CryptoPulse\CryptoPulse.csproj", "{8066E40C-CD3C-4A1D-9716-B093062215CE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UI", "UI\UI.csproj", "{1CF8F365-49BE-4A6E-9AD3-B47436541CE6}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application", "Application\Application.csproj", "{7B8F7A78-451E-418E-AA79-5FC530882EF9}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Domain\Domain.csproj", "{BCE2B187-D61D-416C-92C2-CDE4B8377B1B}"
@@ -13,6 +11,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core", "Core\Core.csproj", "{81403BE9-B26A-4ADE-AA6B-4485973D7BE0}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj", "{0F5EA883-4299-406C-B467-BBEB18AE08B9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UI", "UI\UI.csproj", "{04B786F1-CCA0-4CF0-86D1-3ACBB4ACC074}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -24,10 +24,6 @@ Global
 		{8066E40C-CD3C-4A1D-9716-B093062215CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8066E40C-CD3C-4A1D-9716-B093062215CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8066E40C-CD3C-4A1D-9716-B093062215CE}.Release|Any CPU.Build.0 = Release|Any CPU
-		{1CF8F365-49BE-4A6E-9AD3-B47436541CE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1CF8F365-49BE-4A6E-9AD3-B47436541CE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1CF8F365-49BE-4A6E-9AD3-B47436541CE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1CF8F365-49BE-4A6E-9AD3-B47436541CE6}.Release|Any CPU.Build.0 = Release|Any CPU
 		{7B8F7A78-451E-418E-AA79-5FC530882EF9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{7B8F7A78-451E-418E-AA79-5FC530882EF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7B8F7A78-451E-418E-AA79-5FC530882EF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -48,5 +44,9 @@ Global
 		{0F5EA883-4299-406C-B467-BBEB18AE08B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0F5EA883-4299-406C-B467-BBEB18AE08B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0F5EA883-4299-406C-B467-BBEB18AE08B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{04B786F1-CCA0-4CF0-86D1-3ACBB4ACC074}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04B786F1-CCA0-4CF0-86D1-3ACBB4ACC074}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04B786F1-CCA0-4CF0-86D1-3ACBB4ACC074}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04B786F1-CCA0-4CF0-86D1-3ACBB4ACC074}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

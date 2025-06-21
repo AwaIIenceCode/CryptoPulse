@@ -9,18 +9,13 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\Application\Application.csproj" />
+      <Folder Include="Controls\" />
+      <Folder Include="Resources\" />
     </ItemGroup>
 
     <ItemGroup>
       <PackageReference Include="CommunityToolkit.Mvvm" Version="8.4.0" />
-      <PackageReference Include="MaterialDesignThemes" Version="5.2.1" />
       <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="9.0.6" />
-    </ItemGroup>
-
-    <ItemGroup>
-      <Folder Include="Controls\" />
-      <Folder Include="Resources\" />
     </ItemGroup>
 
 </Project>

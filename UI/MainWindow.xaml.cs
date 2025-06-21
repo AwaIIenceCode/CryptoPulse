@@ -1,11 +1,12 @@
-using System.Windows.Controls;
+﻿using System.Windows;
 
-namespace UI;
-
-public partial class MainWindow : UserControl
+namespace CryptoTracker.UI
 {
-    public MainWindow()
+    public partial class MainWindow : Window
     {
-        InitializeComponent();
+        public MainWindow()
+        {
+            InitializeComponent();
+        }
     }
 }

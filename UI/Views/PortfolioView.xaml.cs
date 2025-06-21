@@ -1,11 +1,12 @@
 using System.Windows.Controls;
 
-namespace UI.Views;
-
-public partial class PortfolioView : UserControl
+namespace CryptoTracker.UI.Views
 {
-    public PortfolioView()
+    public partial class PortfolioView : UserControl
     {
-        InitializeComponent();
+        public PortfolioView()
+        {
+            InitializeComponent();
+        }
     }
 }

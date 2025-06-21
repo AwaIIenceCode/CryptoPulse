@@ -1,11 +1,12 @@
 using System.Windows.Controls;
 
-namespace UI.Views;
-
-public partial class RatesView : UserControl
+namespace CryptoTracker.UI.Views
 {
-    public RatesView()
+    public partial class RatesView : UserControl
     {
-        InitializeComponent();
+        public RatesView()
+        {
+            InitializeComponent();
+        }
     }
 }
