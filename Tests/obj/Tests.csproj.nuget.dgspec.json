@@ -1,0 +1,425 @@
+{
+  "format": 1,
+  "restore": {
+    "F:\\MyCsProjects\\CryptoPulse\\Tests\\Tests.csproj": {}
+  },
+  "projects": {
+    "F:\\MyCsProjects\\CryptoPulse\\Application\\Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\MyCsProjects\\CryptoPulse\\Application\\Application.csproj",
+        "projectName": "Application",
+        "projectPath": "F:\\MyCsProjects\\CryptoPulse\\Application\\Application.csproj",
+        "packagesPath": "C:\\Users\\Awallence PC\\.nuget\\packages\\",
+        "outputPath": "F:\\MyCsProjects\\CryptoPulse\\Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Awallence PC\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "F:\\MyCsProjects\\CryptoPulse\\Domain\\Domain.csproj": {
+                "projectPath": "F:\\MyCsProjects\\CryptoPulse\\Domain\\Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Users\\Awallence PC\\.dotnet\\sdk\\8.0.406/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "F:\\MyCsProjects\\CryptoPulse\\Core\\Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\MyCsProjects\\CryptoPulse\\Core\\Core.csproj",
+        "projectName": "Core",
+        "projectPath": "F:\\MyCsProjects\\CryptoPulse\\Core\\Core.csproj",
+        "packagesPath": "C:\\Users\\Awallence PC\\.nuget\\packages\\",
+        "outputPath": "F:\\MyCsProjects\\CryptoPulse\\Core\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Awallence PC\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "F:\\MyCsProjects\\CryptoPulse\\Domain\\Domain.csproj": {
+                "projectPath": "F:\\MyCsProjects\\CryptoPulse\\Domain\\Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Users\\Awallence PC\\.dotnet\\sdk\\8.0.406/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "F:\\MyCsProjects\\CryptoPulse\\CryptoPulse\\CryptoPulse.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\MyCsProjects\\CryptoPulse\\CryptoPulse\\CryptoPulse.csproj",
+        "projectName": "CryptoPulse",
+        "projectPath": "F:\\MyCsProjects\\CryptoPulse\\CryptoPulse\\CryptoPulse.csproj",
+        "packagesPath": "C:\\Users\\Awallence PC\\.nuget\\packages\\",
+        "outputPath": "F:\\MyCsProjects\\CryptoPulse\\CryptoPulse\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Awallence PC\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Users\\Awallence PC\\.dotnet\\sdk\\8.0.406/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "F:\\MyCsProjects\\CryptoPulse\\Domain\\Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\MyCsProjects\\CryptoPulse\\Domain\\Domain.csproj",
+        "projectName": "Domain",
+        "projectPath": "F:\\MyCsProjects\\CryptoPulse\\Domain\\Domain.csproj",
+        "packagesPath": "C:\\Users\\Awallence PC\\.nuget\\packages\\",
+        "outputPath": "F:\\MyCsProjects\\CryptoPulse\\Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Awallence PC\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Users\\Awallence PC\\.dotnet\\sdk\\8.0.406/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "F:\\MyCsProjects\\CryptoPulse\\Infrastructure\\Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\MyCsProjects\\CryptoPulse\\Infrastructure\\Infrastructure.csproj",
+        "projectName": "Infrastructure",
+        "projectPath": "F:\\MyCsProjects\\CryptoPulse\\Infrastructure\\Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\Awallence PC\\.nuget\\packages\\",
+        "outputPath": "F:\\MyCsProjects\\CryptoPulse\\Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Awallence PC\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "F:\\MyCsProjects\\CryptoPulse\\Application\\Application.csproj": {
+                "projectPath": "F:\\MyCsProjects\\CryptoPulse\\Application\\Application.csproj"
+              },
+              "F:\\MyCsProjects\\CryptoPulse\\Domain\\Domain.csproj": {
+                "projectPath": "F:\\MyCsProjects\\CryptoPulse\\Domain\\Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.1.66, )"
+            },
+            "Refit": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Serilog": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Users\\Awallence PC\\.dotnet\\sdk\\8.0.406/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "F:\\MyCsProjects\\CryptoPulse\\Tests\\Tests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\MyCsProjects\\CryptoPulse\\Tests\\Tests.csproj",
+        "projectName": "Tests",
+        "projectPath": "F:\\MyCsProjects\\CryptoPulse\\Tests\\Tests.csproj",
+        "packagesPath": "C:\\Users\\Awallence PC\\.nuget\\packages\\",
+        "outputPath": "F:\\MyCsProjects\\CryptoPulse\\Tests\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Awallence PC\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "F:\\MyCsProjects\\CryptoPulse\\Application\\Application.csproj": {
+                "projectPath": "F:\\MyCsProjects\\CryptoPulse\\Application\\Application.csproj"
+              },
+              "F:\\MyCsProjects\\CryptoPulse\\Core\\Core.csproj": {
+                "projectPath": "F:\\MyCsProjects\\CryptoPulse\\Core\\Core.csproj"
+              },
+              "F:\\MyCsProjects\\CryptoPulse\\CryptoPulse\\CryptoPulse.csproj": {
+                "projectPath": "F:\\MyCsProjects\\CryptoPulse\\CryptoPulse\\CryptoPulse.csproj"
+              },
+              "F:\\MyCsProjects\\CryptoPulse\\Domain\\Domain.csproj": {
+                "projectPath": "F:\\MyCsProjects\\CryptoPulse\\Domain\\Domain.csproj"
+              },
+              "F:\\MyCsProjects\\CryptoPulse\\Infrastructure\\Infrastructure.csproj": {
+                "projectPath": "F:\\MyCsProjects\\CryptoPulse\\Infrastructure\\Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[17.8.0, )"
+            },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.20.72, )"
+            },
+            "coverlet.collector": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.9.3, )"
+            },
+            "xunit.runner.visualstudio": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Users\\Awallence PC\\.dotnet\\sdk\\8.0.406/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

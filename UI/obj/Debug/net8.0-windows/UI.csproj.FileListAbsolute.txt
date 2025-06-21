@@ -1,0 +1,7 @@
+F:\MyCsProjects\CryptoPulse\UI\obj\Debug\net8.0-windows\UI.csproj.AssemblyReference.cache
+F:\MyCsProjects\CryptoPulse\UI\obj\Debug\net8.0-windows\MainWindow.g.cs
+F:\MyCsProjects\CryptoPulse\UI\obj\Debug\net8.0-windows\Views\NewsView.g.cs
+F:\MyCsProjects\CryptoPulse\UI\obj\Debug\net8.0-windows\Views\PortfolioView.g.cs
+F:\MyCsProjects\CryptoPulse\UI\obj\Debug\net8.0-windows\Views\RatesView.g.cs
+F:\MyCsProjects\CryptoPulse\UI\obj\Debug\net8.0-windows\UI_MarkupCompile.cache
+F:\MyCsProjects\CryptoPulse\UI\obj\Debug\net8.0-windows\UI_MarkupCompile.lref

@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "6qvbx/K7YXA=",
+  "success": true,
+  "projectFilePath": "F:\\MyCsProjects\\CryptoPulse\\Infrastructure\\Infrastructure.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Awallence PC\\.nuget\\packages\\dapper\\2.1.66\\dapper.2.1.66.nupkg.sha512",
+    "C:\\Users\\Awallence PC\\.nuget\\packages\\refit\\8.0.0\\refit.8.0.0.nupkg.sha512",
+    "C:\\Users\\Awallence PC\\.nuget\\packages\\serilog\\4.3.0\\serilog.4.3.0.nupkg.sha512"
+  ],
+  "logs": []
+}

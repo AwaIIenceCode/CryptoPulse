@@ -1,0 +1,15 @@
+bin/
+obj/
+.vs/
+.idea/
+*.user
+*.suo
+*.cache
+*.log
+*.db
+*.pdb
+*.DS_Store
+*.g.cs
+*.AssemblyAttributes.cs
+project.assets.json
+project.nuget.cache

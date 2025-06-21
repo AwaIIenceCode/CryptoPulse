@@ -1,0 +1,11 @@
+F:\MyCsProjects\CryptoPulse\Domain\bin\Debug\net8.0\Domain.deps.json
+F:\MyCsProjects\CryptoPulse\Domain\bin\Debug\net8.0\Domain.dll
+F:\MyCsProjects\CryptoPulse\Domain\bin\Debug\net8.0\Domain.pdb
+F:\MyCsProjects\CryptoPulse\Domain\obj\Debug\net8.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
+F:\MyCsProjects\CryptoPulse\Domain\obj\Debug\net8.0\Domain.AssemblyInfoInputs.cache
+F:\MyCsProjects\CryptoPulse\Domain\obj\Debug\net8.0\Domain.AssemblyInfo.cs
+F:\MyCsProjects\CryptoPulse\Domain\obj\Debug\net8.0\Domain.csproj.CoreCompileInputs.cache
+F:\MyCsProjects\CryptoPulse\Domain\obj\Debug\net8.0\Domain.dll
+F:\MyCsProjects\CryptoPulse\Domain\obj\Debug\net8.0\refint\Domain.dll
+F:\MyCsProjects\CryptoPulse\Domain\obj\Debug\net8.0\Domain.pdb
+F:\MyCsProjects\CryptoPulse\Domain\obj\Debug\net8.0\ref\Domain.dll
