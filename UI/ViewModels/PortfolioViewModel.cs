@@ -1,6 +1,6 @@
-namespace UI.ViewModels;
-
-public class PortfolioViewModel
+namespace CryptoPulse.UI.ViewModels
 {
-    
+    public class PortfolioViewModel
+    {
+    }
 }

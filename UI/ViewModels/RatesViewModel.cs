@@ -1,6 +1,6 @@
-namespace UI.ViewModels;
-
-public class RatesViewModel
+namespace CryptoPulse.UI.ViewModels
 {
-    
+    public class RatesViewModel
+    {
+    }
 }

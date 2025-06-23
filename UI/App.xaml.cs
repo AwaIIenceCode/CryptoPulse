@@ -1,8 +1,8 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using System.Windows;
-using CryptoTracker.UI.ViewModels;
+using CryptoPulse.UI.ViewModels;
 
-namespace CryptoTracker.UI
+namespace CryptoPulse.UI
 {
     public partial class App : Application
     {

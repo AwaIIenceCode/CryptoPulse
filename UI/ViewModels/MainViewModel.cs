@@ -1,8 +1,8 @@
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
-using CryptoTracker.UI.Views;
+using CryptoPulse.UI.Views; // Также обнови путь до Views
 
-namespace CryptoTracker.UI.ViewModels
+namespace CryptoPulse.UI.ViewModels
 {
     public partial class MainViewModel : ObservableObject
     {

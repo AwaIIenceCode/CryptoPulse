@@ -1,6 +1,6 @@
-namespace UI.ViewModels;
-
-public class NewsViewModel
+namespace CryptoPulse.UI.ViewModels
 {
-    
+    public class NewsViewModel
+    {
+    }
 }

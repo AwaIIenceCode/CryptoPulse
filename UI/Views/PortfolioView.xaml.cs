@@ -1,6 +1,6 @@
 using System.Windows.Controls;
 
-namespace CryptoTracker.UI.Views
+namespace CryptoPulse.UI.Views
 {
     public partial class PortfolioView : UserControl
     {
