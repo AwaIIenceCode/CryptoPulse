@@ -8,6 +8,7 @@
     </PropertyGroup>
 
     <ItemGroup>
+        <Folder Include="Assets\" />
         <Folder Include="Controls\" />
         <Folder Include="Resources\" />
     </ItemGroup>
@@ -15,5 +16,11 @@
     <ItemGroup>
         <PackageReference Include="CommunityToolkit.Mvvm" Version="8.4.0" />
         <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="9.0.6" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Update="Assets\Video\MainBackgroundVideo2.0.mp4">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
     </ItemGroup>
 </Project>

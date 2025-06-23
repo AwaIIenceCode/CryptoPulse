@@ -1,4 +1,5 @@
 ﻿using System.Windows;
+using System.Windows.Controls;
 
 namespace CryptoPulse.UI
 {
@@ -19,6 +20,12 @@ namespace CryptoPulse.UI
         {
             // Пока просто выводим сообщение
             MessageBox.Show("Вход скоро будет!");
+        }
+
+        private void MediaElement_MediaEnded(object sender, RoutedEventArgs e)
+        {
+            (sender as MediaElement).Position = TimeSpan.Zero;
+            (sender as MediaElement).Play();
         }
     }
 }
