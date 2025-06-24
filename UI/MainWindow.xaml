@@ -55,17 +55,17 @@
                     <TextBlock Text="Регистрация нового пользователя" Foreground="White" FontSize="18" Margin="0,0,0,10"/>
                     <StackPanel>
                         <TextBlock Text="Логин" Foreground="Gray" Margin="0,0,0,2" x:Name="LoginHint" />
-                        <TextBox x:Name="LoginTextBox" Margin="0,0,0,10" GotFocus="TextBox_GotFocus" LostFocus="TextBox_LostFocus"/>
+                        <TextBox x:Name="LoginTextBox" Margin="0,0,0,10" Background="#808080" GotFocus="TextBox_GotFocus" LostFocus="TextBox_LostFocus"/>
                     </StackPanel>
                     <StackPanel>
                         <TextBlock Text="Email" Foreground="Gray" Margin="0,0,0,2" x:Name="EmailHint" />
-                        <TextBox x:Name="EmailTextBox" Margin="0,0,0,10" GotFocus="TextBox_GotFocus" LostFocus="TextBox_LostFocus"/>
+                        <TextBox x:Name="EmailTextBox" Margin="0,0,0,10" Background="#808080" GotFocus="TextBox_GotFocus" LostFocus="TextBox_LostFocus"/>
                     </StackPanel>
                     <StackPanel>
                         <TextBlock Text="Пароль" Foreground="Gray" Margin="0,0,0,2" x:Name="PasswordHint" />
-                        <PasswordBox x:Name="PasswordBox" Margin="0,0,0,10" GotFocus="TextBox_GotFocus" LostFocus="TextBox_LostFocus"/>
+                        <PasswordBox x:Name="PasswordBox" Margin="0,0,0,10" Background="#808080" GotFocus="TextBox_GotFocus" LostFocus="TextBox_LostFocus"/>
                     </StackPanel>
-                    <Button Content="Зарегистрироваться" Click="RegisterButton_Click" Width="150" Height="30" Background="#FFD700" Foreground="Black"/>
+                    <Button Content="Зарегистрироваться" Click="RegisterButton_Click" Width="150" Height="30"/>
                     <Button Content="Назад" Click="BackButton_Click" Width="150" Height="30" Margin="0,10,0,0"/>
                 </StackPanel>
             </Border>

@@ -99,40 +99,52 @@ namespace CryptoPulse.UI
 
         private void ShowRegisterPanel()
         {
-            RegisterPanel.Visibility = System.Windows.Visibility.Visible;
-            DoubleAnimation animation = new DoubleAnimation
+            RegisterPanel.Visibility = Visibility.Visible;
+
+            var scaleTransform = new ScaleTransform(0.0, 0.0);
+            RegisterPanel.RenderTransform = scaleTransform;
+            RegisterPanel.RenderTransformOrigin = new Point(0.5, 0.5);
+
+            var scaleUpX = new DoubleAnimation(0, 1, TimeSpan.FromSeconds(0.8))
             {
-                From = -200,
-                To = 0,
-                Duration = TimeSpan.FromSeconds(0.5),
-                EasingFunction = new QuadraticEase()
+                EasingFunction = new QuinticEase { EasingMode = EasingMode.EaseOut }
             };
-            RegisterTransform.BeginAnimation(TranslateTransform.YProperty, animation);
+            var scaleUpY = new DoubleAnimation(0, 1, TimeSpan.FromSeconds(0.8))
+            {
+                EasingFunction = new QuinticEase { EasingMode = EasingMode.EaseOut }
+            };
+            var fadeIn = new DoubleAnimation(0, 1, TimeSpan.FromSeconds(0.8));
+
+            RegisterPanel.BeginAnimation(UIElement.OpacityProperty, fadeIn);
+            scaleTransform.BeginAnimation(ScaleTransform.ScaleXProperty, scaleUpX);
+            scaleTransform.BeginAnimation(ScaleTransform.ScaleYProperty, scaleUpY);
         }
 
         private void ResetRegisterPanel()
         {
-            DoubleAnimation animation = new DoubleAnimation
+            var scaleTransform = RegisterPanel.RenderTransform as ScaleTransform;
+
+            var scaleDownX = new DoubleAnimation(1, 0, TimeSpan.FromSeconds(0.8))
             {
-                From = 0,
-                To = -200,
-                Duration = TimeSpan.FromSeconds(0.5),
-                EasingFunction = new QuadraticEase()
+                EasingFunction = new QuinticEase { EasingMode = EasingMode.EaseIn }
             };
-            animation.Completed += (s, e) =>
+            var scaleDownY = new DoubleAnimation(1, 0, TimeSpan.FromSeconds(0.8))
             {
-                RegisterPanel.Visibility = System.Windows.Visibility.Collapsed;
-                MainContent.Visibility = System.Windows.Visibility.Visible;
-                RegisterTransform.BeginAnimation(TranslateTransform.YProperty, null);
-                LoginTextBox.Text = "";
-                EmailTextBox.Text = "";
-                PasswordBox.Password = "";
-                LoginHint.Visibility = System.Windows.Visibility.Visible;
-                EmailHint.Visibility = System.Windows.Visibility.Visible;
-                PasswordHint.Visibility = System.Windows.Visibility.Visible;
+                EasingFunction = new QuinticEase { EasingMode = EasingMode.EaseIn }
             };
-            RegisterTransform.BeginAnimation(TranslateTransform.YProperty, animation);
+            var fadeOut = new DoubleAnimation(1, 0, TimeSpan.FromSeconds(0.8));
+
+            fadeOut.Completed += (s, e) =>
+            {
+                RegisterPanel.Visibility = Visibility.Collapsed;
+                MainContent.Visibility = Visibility.Visible;
+            };
+
+            RegisterPanel.BeginAnimation(UIElement.OpacityProperty, fadeOut);
+            scaleTransform?.BeginAnimation(ScaleTransform.ScaleXProperty, scaleDownX);
+            scaleTransform?.BeginAnimation(ScaleTransform.ScaleYProperty, scaleDownY);
         }
+
 
         private void BackButton_Click(object sender, RoutedEventArgs e)
         {
