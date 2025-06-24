@@ -20,8 +20,12 @@
     </ItemGroup>
 
     <ItemGroup>
-      <None Update="Assets\Video\MainBackgroundVideo2.0.mp4">
-        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      </None>
+        <None Update="Assets\Video\MainBackgroundVideo2.0.mp4">
+            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </None>
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\Application\Application.csproj" />
     </ItemGroup>
 </Project>

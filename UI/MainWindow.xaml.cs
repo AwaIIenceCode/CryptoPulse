@@ -1,16 +1,19 @@
 ﻿using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media.Animation;
-using System.Windows.Media; 
-using Microsoft.Data.SqlClient;
+using System.Windows.Media;
+using CryptoPulse.Application.Features.Users;
 
 namespace CryptoPulse.UI
 {
     public partial class MainWindow : Window
     {
+        private readonly UserRegistrationService _userRegistrationService;
+
         public MainWindow()
         {
             InitializeComponent();
+            _userRegistrationService = new UserRegistrationService("Server=localhost,1433;Database=CryptoPulseDB;User Id=sa;Password=useruser_123;");
         }
 
         private void RegisterButton_Click(object sender, RoutedEventArgs e)
@@ -32,53 +35,14 @@ namespace CryptoPulse.UI
                     return;
                 }
 
-                using (var connection = new SqlConnection("Server=localhost,1433;Database=CryptoPulseDB;User Id=sa;Password=useruser_123;"))
+                if (_userRegistrationService.RegisterUser(login, email, password))
                 {
-                    try
-                    {
-                        connection.Open();
-
-                        string createTable = @"
-                            IF NOT EXISTS (SELECT * FROM sys.tables WHERE name = 'Users')
-                            CREATE TABLE Users (
-                                Id INT IDENTITY(1,1) PRIMARY KEY,
-                                Login NVARCHAR(50) NOT NULL,
-                                Email NVARCHAR(100) NOT NULL,
-                                Password NVARCHAR(100) NOT NULL
-                            )";
-                        using (var command = new SqlCommand(createTable, connection))
-                        {
-                            command.ExecuteNonQuery();
-                        }
-
-                        string checkLogin = "SELECT COUNT(*) FROM Users WHERE Login = @Login";
-                        using (var command = new SqlCommand(checkLogin, connection))
-                        {
-                            command.Parameters.AddWithValue("@Login", login);
-                            int count = (int)command.ExecuteScalar();
-                            if (count > 0)
-                            {
-                                MessageBox.Show("Такой логин уже есть, придумай другой!");
-                                return;
-                            }
-                        }
-
-                        string insertUser = "INSERT INTO Users (Login, Email, Password) VALUES (@Login, @Email, @Password)";
-                        using (var command = new SqlCommand(insertUser, connection))
-                        {
-                            command.Parameters.AddWithValue("@Login", login);
-                            command.Parameters.AddWithValue("@Email", email);
-                            command.Parameters.AddWithValue("@Password", password);
-                            command.ExecuteNonQuery();
-                        }
-
-                        MessageBox.Show("Юзер зареган, поздравляю!");
-                        ResetRegisterPanel();
-                    }
-                    catch (SqlException ex)
-                    {
-                        MessageBox.Show($"Ошибка с БД: {ex.Message}");
-                    }
+                    MessageBox.Show("Юзер зареган, поздравляю!");
+                    ResetRegisterPanel();
+                }
+                else
+                {
+                    MessageBox.Show("Ошибка при регистрации, попробуй ещё раз!");
                 }
             }
         }
@@ -144,7 +108,6 @@ namespace CryptoPulse.UI
             scaleTransform?.BeginAnimation(ScaleTransform.ScaleXProperty, scaleDownX);
             scaleTransform?.BeginAnimation(ScaleTransform.ScaleYProperty, scaleDownY);
         }
-
 
         private void BackButton_Click(object sender, RoutedEventArgs e)
         {
