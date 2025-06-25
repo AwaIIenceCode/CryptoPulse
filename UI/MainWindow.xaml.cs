@@ -3,17 +3,21 @@ using System.Windows.Controls;
 using System.Windows.Media.Animation;
 using System.Windows.Media;
 using CryptoPulse.Application.Features.Users;
+using CryptoPulse.UI.ViewModels;
 
 namespace CryptoPulse.UI
 {
     public partial class MainWindow : Window
     {
         private readonly UserRegistrationService _userRegistrationService;
+        private readonly MainViewModel _viewModel;
 
-        public MainWindow()
+        public MainWindow(UserRegistrationService userRegistrationService, MainViewModel viewModel)
         {
             InitializeComponent();
-            _userRegistrationService = new UserRegistrationService("Server=localhost,1433;Database=CryptoPulseDB;User Id=sa;Password=useruser_123;");
+            _userRegistrationService = userRegistrationService ?? throw new ArgumentNullException(nameof(userRegistrationService));
+            _viewModel = viewModel ?? throw new ArgumentNullException(nameof(viewModel));
+            DataContext = _viewModel;
         }
 
         private void RegisterButton_Click(object sender, RoutedEventArgs e)
@@ -45,6 +49,12 @@ namespace CryptoPulse.UI
                     MessageBox.Show("Ошибка при регистрации, попробуй ещё раз!");
                 }
             }
+        }
+
+        private void GuestButton_Click(object sender, RoutedEventArgs e)
+        {
+            _viewModel.EnterGuestModeCommand.Execute(null);
+            MessageBox.Show("Добро пожаловать, гость!");
         }
 
         private void LoginButton_Click(object sender, RoutedEventArgs e)

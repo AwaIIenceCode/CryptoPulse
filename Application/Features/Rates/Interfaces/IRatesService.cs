@@ -1,6 +1,9 @@
-namespace Application.Features.Rates.Interfaces;
+using System.Threading.Tasks;
 
-public class IRatesService
+namespace CryptoPulse.Application.Features.Rates.Interfaces
 {
-    
+    public interface IRatesService
+    {
+        Task<string> GetCoinRatesAsync();
+    }
 }
